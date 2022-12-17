@@ -76,7 +76,7 @@ class Robot:
     def set_object(self, obj_pos, obj_yaw):
         # Set gripper pos & orn
         self.obj_pos = list(obj_pos)
-        self.obj_pos[2] += 0.200                        # End-effector will be at 2.5 cm above the object                       
+        self.obj_pos[2] += 0.200                        # End-effector will be at 20 cm above the object                       
         self.obj_pos_ready = list(obj_pos) 
         self.obj_pos_ready[2] += 0.250                  # This is to prevent collision during the motion
         self.obj_orn = p.getQuaternionFromEuler(
